@@ -1,0 +1,61 @@
+.cabecalho__menu-hamburger {
+    width: 30px;
+    height: 24px;
+    background-image: url("../assets/Menu.svg");
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 1em;
+}
+
+.cabecalho {
+    background-color: var(--cor-cabecalho);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem {
+    padding: 1em;
+}
+
+.lista-menu {
+    display: none; /*Fez a lista de categorias sumir*/
+    position: absolute;
+    top: 100%;
+    width: 70vw; /*pega 70% da tela*/
+}
+
+.container__botao:checked ~ .lista-menu { /* ~ é um combinador CSS. Procura o outro elemento que vem em seguida que tem a classe escrita depois*/
+    display: block;
+}
+
+.lista-menu__titulo, .lista-menu__item {
+    padding: 1em;
+    background-color: var(--cor-cabecalho);
+}
+
+.lista-menu__titulo {
+    color: var(--cor-titulo-menu);
+    font-weight: 700;
+    
+}
+
+.lista-menu__link {
+    background: var(--cor-lista-menu);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+
+}
+
+.container__botao {
+    display: none;
+}
