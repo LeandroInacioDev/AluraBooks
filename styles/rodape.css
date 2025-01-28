@@ -6,3 +6,60 @@ hr {
     padding: 1em 1em 1.5em 1em;
     background-color: var(--cor-rodape);
 }
+
+.rodape__coluna {
+    display: none;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    padding: 4em 3em;
+}
+
+.rodape__titulo {
+    font-size: 24px;
+}
+
+.rodape__coluna {
+    display: block;
+}
+
+.rodape__coluna__titulo {
+    font-size: 14px;
+    color: var(--cor-titulo-rodape);
+    margin-bottom: 2em;
+}
+
+.rodape__topicos {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin: 1em 0;
+}
+
+.rodape__topicos__link {
+    text-decoration: none;
+    color: var(--cor-texto-rodape);
+    font-size: 14px;
+}
+}
+
+
+
+@media screen and (min-width: 1728px) {
+
+.rodape__coluna {
+    border-left: 1px solid var(--cor-titulo-rodape);
+    padding-left: 1em;
+}
+
+.rodape {
+    padding: 3.5em 12vw;
+}
+
+}

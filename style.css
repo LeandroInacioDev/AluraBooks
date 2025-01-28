@@ -11,8 +11,12 @@
     --cor-titulo-menu: #EB9B00;
     --cor-azul-forte: #002F52;
     --cor-rodape: #F9F9F9;
+    --cor-preto: #000000;
+    --cor-texto-rodape: #474646;
+    --cor-titulo-rodape: #858585;
     --cor-lista-menu: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
     --fonte-principal: "Poppins", serif;
+    --fonte-secundaria: "Josefin Sans", serif;
 }
 
 body {
